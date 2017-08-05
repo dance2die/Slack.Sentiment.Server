@@ -1,0 +1,27 @@
+{
+  "name": "slack.sentiment.server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "build": "webpack"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "express": "^4.15.3",
+    "slack": "^8.3.1",
+    "socket.io": "^2.0.3",
+    "webpack": "^3.4.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}

@@ -5,8 +5,9 @@ const io = require('../node_modules/socket.io')(http);
 const _ = require('lodash');
 
 const slack = require('slack')
-const apiKeys = require('../apiKeys.js');
-const token = apiKeys.SLACK_API_TOKEN;
+// const apiKeys = require('../apiKeys.js');
+// const token = apiKeys.SLACK_API_TOKEN;
+const token = process.env.SLACK_API_TOKEN;
 const bot = slack.rtm.client();
 
 

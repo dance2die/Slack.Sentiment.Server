@@ -1,7 +1,7 @@
 // https://socket.io/get-started/chat/
 const app = require('express')();
 const http = require('http').Server(app);
-const io = require('socket.io')(http);
+const io = require('../node_modules/socket.io')(http);
 const _ = require('lodash');
 
 const slack = require('slack')
@@ -94,7 +94,7 @@ io.on('connection', function(socket){
 const port = 3001;
 http.listen(3001, function(){
     console.log(`listening on *:{3001}`);
-    
+
 });
 
 

@@ -4,8 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node ./src/server.js",
-    "build": "webpack"
+    "start": "node ./src/server.js"
   },
   "babel": {
     "presets": [
